@@ -6,8 +6,16 @@ from skimage import color
 from tqdm import tqdm
 from PIL import Image
 import PIL
+from tkinter import *
+from tkinter import messagebox
+from PIL import ImageTk, Image
+from tkinter import filedialog
 
-img = cv2.imread('test4.jpg')
+def openfn():  #Function to get the file name(location)
+    filename = filedialog.askopenfilename(title='open')
+    return filename
+
+img = cv2.imread(openfn(),1)
 img = cv2.resize(img,(int(img.shape[1]*0.5),int(img.shape[0]*0.5)),interpolation = cv2.INTER_AREA)
 lab = color.rgb2lab(img)
 
