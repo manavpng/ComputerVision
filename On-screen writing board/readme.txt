@@ -1,4 +1,4 @@
-# Steps to run this project:  
+<b>Steps to run this project:</b>  
 1. Create a seprate Jupyter notebook  
 2. Import all the libraries as done in both the codes (calibrate.py and board.py) in first cell of notebook.  
 3. In next cell copy the code of calibrate.py and run this cell.
